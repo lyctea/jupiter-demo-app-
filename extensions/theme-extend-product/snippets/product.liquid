@@ -1,5 +1,5 @@
 <script>
-  _PAGE_VERSION_ = '40278672babde1eb983214ab8d1f1603bd456b75';
+  _PAGE_VERSION_ = 'e87c85e0b3b68b308ae58698e9184a383473914a';
 </script>
 <!doctype html>
 <link rel="stylesheet" href="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/account.0d1d9ae0.css">
@@ -17,8 +17,8 @@
         await t()
       )();
     };
-    (self.Astro || (self.Astro = {})).load = e;
-    window.dispatchEvent(new Event('astro:load'));
+    (self.Astro || (self.Astro = {})).only = e;
+    window.dispatchEvent(new Event('astro:only'));
   })();
   (() => {
     var b = Object.defineProperty;
@@ -184,99 +184,15 @@
 <div id="astro-container" class="bg-slate-200 !pb-8">
   <div>
     <astro-island
-      uid="2o1aqR"
-      prefix="r0"
-      component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSection.0ad7ea62.js"
+      uid="1wmyy6"
+      component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSection.33591e95.js"
       component-export="default"
       renderer-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/client.f80b1d52.js"
       props="{&quot;handle&quot;:[0,&quot;{{product.handle}}&quot;]}"
       ssr=""
-      client="load"
-      before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.c3c42270.js"
+      client="only"
+      before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.0c43eb22.js"
       opts="{&quot;name&quot;:&quot;ProductSection&quot;,&quot;value&quot;:true}"
-      await-children=""
-    >
-      <div>
-        <div>
-          <div class="container pt-6">
-            <nav aria-label=" Breadcrumb">
-              <ol role="list" class="flex items-center gap-1 text-sm text-gray-600">
-                <li>
-                  <a href="/" class="block text-gray-800 transition hover:text-gray-700">
-                    <span class="sr-only">Home</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                  </svg>
-                </li>
-                <li>
-                  <div class="block transition hover:text-gray-700">{{ product.title }}</div>
-                </li>
-              </ol>
-            </nav>
-          </div>
-          <div class="flex flex-col justify-center">
-            <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
-              <div class="w-full md:w-1/3 bg-white grid place-items-center">
-                <img alt="tailwind logo" class="rounded-xl">
-              </div>
-              <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-                <div class="flex justify-between item-center">
-                  <p class="text-gray-500 font-medium hidden md:block">Vacations</p>
-                  <div class="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-yellow-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <p class="text-gray-600 font-bold text-sm ml-1">
-                      4.96<span class="text-gray-500 font-normal">(76 reviews)</span>
-                    </p>
-                  </div>
-                  <div class="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-pink-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
-                    </svg>
-                  </div>
-                  <div class="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
-                    Superhost
-                  </div>
-                </div>
-                <!-- $ -->
-                <h3 class="font-black text-gray-800 md:text-3xl text-xl">{{ product.title }}</h3>
-                <p class="md:text-lg text-gray-500 text-base">{{ product.description }}</p>
-                <!-- /$ -->
-                <p class="text-xl font-black text-gray-800">
-                  <span class="font-normal text-gray-600 text-base">/piece</span>
-                </p>
-                <button class="inline-block w-fit bg-primary-50 rounded-full text-white !px-12 !py-3 !mx-8 !mb-8 hover:bg-primary-40">
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- astro:end -->
-    </astro-island>
+    ></astro-island>
   </div>
 </div>
