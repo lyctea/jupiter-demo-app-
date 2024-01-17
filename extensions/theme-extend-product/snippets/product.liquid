@@ -1,13 +1,9 @@
 <script>
-  _PAGE_VERSION_ = 'd0e9cfcb76042559b19095efeb7659213c4ef74c';
+  _PAGE_VERSION_ = '791682c0bcc424540f75f54fa2f7acfb5e55b28a';
 </script>
 <!doctype html>
-<link rel="stylesheet" href="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/account.0c070915.css">
-<link rel="stylesheet" href="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/product.f0c57672.css">
-<link
-  rel="stylesheet"
-  href="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSwiper.e52fe7a8.css"
->
+<link rel="stylesheet" href="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/account.73e1267c.css">
+<link rel="stylesheet" href="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/product.bd8a9ba8.css">
 <script
   type="module"
   src="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/hoisted.6a69792d.js"
@@ -21,13 +17,16 @@
 </style>
 <script>
   (() => {
-    var e = async (t) => {
-      await (
-        await t()
-      )();
+    var i = (t) => {
+      let e = async () => {
+        await (
+          await t()
+        )();
+      };
+      'requestIdleCallback' in window ? window.requestIdleCallback(e) : setTimeout(e, 200);
     };
-    (self.Astro || (self.Astro = {})).only = e;
-    window.dispatchEvent(new Event('astro:only'));
+    (self.Astro || (self.Astro = {})).idle = i;
+    window.dispatchEvent(new Event('astro:idle'));
   })();
   (() => {
     var b = Object.defineProperty;
@@ -224,15 +223,15 @@
 <head></head>
 <div id="astro-container" class="bg-slate-200 !pb-8">
   <astro-island
-    uid="Z1dyQdz"
-    prefix="r2"
-    component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSection.753fb596.js"
+    uid="1Rkig2"
+    prefix="r3"
+    component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSection.d63b497c.js"
     component-export="default"
     renderer-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/client.f80b1d52.js"
     props="{&quot;handle&quot;:[0,&quot;{{product.handle}}&quot;]}"
     ssr=""
     client="load"
-    before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.77b1813d.js"
+    before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.30823ac8.js"
     opts="{&quot;name&quot;:&quot;ProductSection&quot;,&quot;value&quot;:true}"
     await-children=""
   >
@@ -267,7 +266,7 @@
           </nav>
         </div>
         <div class="flex flex-col justify-center">
-          <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-6xl mx-auto border border-white bg-white">
+          <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 mx-auto border border-white bg-white">
             <div class="w-full md:w-1/3 bg-white grid place-items-center">
               <img
                 id="product-image"
@@ -279,16 +278,28 @@
               >
               <div id="product-swiper" class="w-[260px] hidden">
                 <astro-island
-                  uid="O5o8X"
-                  component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSwiper.02a68fa8.js"
+                  uid="ZXxthf"
+                  prefix="r1"
+                  component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductSwiper.b526c333.js"
                   component-export="default"
                   renderer-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/client.f80b1d52.js"
                   props="{}"
                   ssr=""
-                  client="only"
-                  before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.77b1813d.js"
+                  client="idle"
+                  before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.30823ac8.js"
                   opts="{&quot;name&quot;:&quot;ProductSwiper&quot;,&quot;value&quot;:true}"
-                ></astro-island>
+                  await-children=""
+                >
+                  <div class="w-[260px] h-[260px]">
+                    <div class="swiper mySwiper" style="--swiper-navigation-color:#fff;--swiper-pagination-color:#fff">
+                      <div class="swiper-wrapper"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <!-- astro:end -->
+                </astro-island>
               </div>
             </div>
             <div class="w-full md:w-1/3 bg-white flex flex-col space-y-2 p-3">
@@ -303,14 +314,14 @@
             <div class="w-full md:w-1/3 bg-white flex flex-col space-y-2 p-3 scale-75">
               <astro-island
                 uid="Z19UWpv"
-                prefix="r1"
+                prefix="r2"
                 component-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/ProductVariantSelect.14f26656.js"
                 component-export="default"
                 renderer-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/client.f80b1d52.js"
                 props="{}"
                 ssr=""
                 client="visible"
-                before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.77b1813d.js"
+                before-hydration-url="https://storage-us.xtool.com/resource/static/dic/testxtool/_astro/astro_scripts/before-hydration.js.30823ac8.js"
                 opts="{&quot;name&quot;:&quot;ProductVariantSelect&quot;,&quot;value&quot;:true}"
                 await-children=""
               >
